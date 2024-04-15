@@ -74,7 +74,7 @@ public class WarehouseController {
     }
 
 
-    /**
+
     @PutMapping(path="/warehouse/{id}")
     public @ResponseBody String updateWarehouse(@PathVariable int id, @RequestBody Warehouse updatedWarehouse) {
         Warehouse warehouse = warehouseRepository.findById(id).orElse(null);
@@ -91,7 +91,6 @@ public class WarehouseController {
             return "Warehouse not found";
         }
     }
-    */
 
 
 }
